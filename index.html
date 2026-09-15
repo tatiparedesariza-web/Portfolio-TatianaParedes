@@ -131,11 +131,18 @@
 #sobre-mi .photo-frame span{ color: #8c7c5c; }
     justify-content:center;
   }
-  .photo-frame span{
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
+  .photo-frame{
+  aspect-ratio: 4/5;
+  max-width: 340px;
+  margin-left: auto;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(155deg, var(--bg-soft), #141311);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
   }
 
   .role-line{
