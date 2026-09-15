@@ -108,28 +108,15 @@
 
   p{ color: var(--cream-dim); font-weight: 300; }
 
-  /* HERO / ABOUT */
-  #sobre-mi{
-  padding-top: 90px;
-  background: var(--cream);
-  border-bottom: 1px solid rgba(23,22,20,0.08);
-#sobre-mi{
-  padding-top: 90px;
-  background: var(--cream);
-  border-bottom: 1px solid rgba(23,22,20,0.08);
-}
-#sobre-mi .eyebrow{ color: #9c7a34; }
-#sobre-mi h1{ color: #211a10; }
-#sobre-mi em{ color: #6b5638; }
-#sobre-mi p{ color: #4a4030; }
-#sobre-mi .role-line{ color: #6b5f4c; }
-#sobre-mi .role-line strong{ color: #2c2417; }
-#sobre-mi .photo-frame{
-  background: linear-gradient(155deg, #eee7d8, #ddd2b8);
-  border: 1px solid rgba(23,22,20,0.12);
-}
-#sobre-mi .photo-frame span{ color: #8c7c5c; }
-    justify-content:center;
+ /* HERO / ABOUT */
+  #sobre-mi .grid{
+    display:grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 60px;
+    align-items: center;
+  }
+  #sobre-mi p{ margin-top: 20px; max-width: 46ch; font-size: 1.02rem; }
+  #sobre-mi .tagline{ margin-top: 6px; }
   }
   .photo-frame{
   aspect-ratio: 4/5;
@@ -141,8 +128,6 @@
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
   }
 
   .role-line{
